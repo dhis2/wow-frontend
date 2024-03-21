@@ -1,0 +1,30 @@
+.main {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.deprecated {
+    color: red;
+    text-decoration: line-through;
+}
+
+.centered {
+    text-align: center;
+}
+
+.dependenciesListContainer {
+    font-size: 0.8em;
+}
+.dependenciesListContainer h1 {
+    font-size: 1em;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.tabs {
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}

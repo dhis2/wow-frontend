@@ -1,0 +1,112 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #02204f;
+  --ifm-color-primary-dark: #021d47;
+  --ifm-color-primary-darker: #021b43;
+  --ifm-color-primary-darkest: #011637;
+  --ifm-color-primary-light: #022357;
+  --ifm-color-primary-lighter: #02255b;
+  --ifm-color-primary-lightest: #032a67;
+  --ifm-footer-link-hover-color: var(--ifm-color-secondary);
+  --ifm-code-font-size: 100%;
+
+  --ifm-menu-color-background-hover: #eaedf0;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+/* Accessible links in documents */
+.markdown a {
+  text-decoration: underline;
+}
+.markdown a:visited {
+  color: #551A8B;
+}
+
+/* Adjust footer */
+.footer__links {
+  margin-bottom: 3rem;
+}
+.footer__copyright {
+  font-size: 0.8rem;
+  color: var(--ifm-color-secondary);
+}
+
+/* Adjust main sidebar styles*/
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage- {
+  background:#f8f9fa;
+}
+.menu__link--active:not(.menu__link--sublist) {
+  background: #eaedf0;
+  border-left: 3px solid #404b5a;
+}
+.menu__link {
+  border-radius: unset;
+}
+
+/* Add table of contents indicator */
+.table-of-contents__link.table-of-contents__link--active::before {
+  content: '—';
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  left: 0px;
+  color: #a0adba;
+}
+
+/* Change domain nav position and styling */
+.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar-, .announcementBarContent_2EqR {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar- a.domain-nav-item, .announcementBarContent_2EqR a.domain-nav-item {
+  font-size: 12px;
+  padding: 0 8px;
+  text-decoration: none;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar-styles-module a.domain-nav-item:hover, .announcementBarContent_2EqR a.domain-nav-item:hover {
+  text-decoration: none;
+}
+
+.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar-styles-module a.domain-nav-item {
+  text-decoration: none;
+}
+
+a.domain-nav-item {
+  padding-left: 8px;
+  font-size: 12px;
+}
+a.domain-nav-item:after {
+  padding-left: 4px;
+  content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHZpZXdCb3g9IjAgMCA3IDciPgogIDxwYXRoIGZpbGw9IiMyOTNGNkYiIGQ9Ik03LDAgTDcsNCBMNiw0IEw1Ljk5OTQ0NjYxLDEuNzA3IEwxLjM1MzU1MzM5LDYuMzUzNTUzMzkgTDAuNjQ2NDQ2NjA5LDUuNjQ2NDQ2NjEgTDUuMjkyNDQ2NjEsMSBMMywxIEwzLDAgTDcsMCBaIi8+Cjwvc3ZnPgo=');
+}
