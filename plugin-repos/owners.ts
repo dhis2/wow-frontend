@@ -22,7 +22,7 @@ const owners = {
     "charts-app",
     "who-immunization-analysis-app",
     "maps-climate-pilot-app",
-    "climate-data-app"
+    "climate-data-app",
   ],
   tracker: [
     "capture-app",
@@ -80,6 +80,7 @@ const owners = {
     "translation-linker",
     "d2-cluster-docker-compose",
   ],
+  deprecated: ["academy-web-app-dev-2020"],
   others: [
     "bedrock",
     "bot",
@@ -102,6 +103,17 @@ const owners = {
     "gf-adex-flow-app",
     "metadata-package-development",
     "who-metadata-browser-app",
+    "action-instance-version",
+    "action-supported-legacy-versions",
+    "workflow-app-verify-commits",
+    "deploy-build",
+    ".github",
+    "metadata-buffer",
+    "signed-commits-test",
+    "threat-model",
+    "chap-app",
+    "workflows-test",
+    "wow-frontend",
   ],
 };
 
