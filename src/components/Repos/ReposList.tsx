@@ -99,7 +99,7 @@ const ReposList = (props: ReposProps) => {
                 // onClick={() => console.log(r)}
                 className={clsx({
                   [styles.hidden]: options["show-webapps-only"] && !r.isWebApp,
-                  [styles.deprecated]: r.deprecated
+                  [styles.deprecated]: r.deprecated,
                 })}
               >
                 <td>{index + 1}</td>
@@ -108,15 +108,17 @@ const ReposList = (props: ReposProps) => {
                     {r.name}
                   </a>
                   <br />
-                  <small>
-                    {r.description}{" "}
-                    {r.stargazers_count > 1 && (
-                      <>
-                        {" "}
-                        | <>{r.stargazers_count}★</>
-                      </>
-                    )}
-                  </small>
+                  {r.description && (
+                    <small>
+                      {r.description}{" "}
+                      {r.stargazers_count > 1 && (
+                        <>
+                          {" "}
+                          | <>{r.stargazers_count}★</>
+                        </>
+                      )}
+                    </small>
+                  )}
                   <div>
                     {r.type && (
                       <>

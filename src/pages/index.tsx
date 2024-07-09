@@ -1,7 +1,5 @@
 import clsx from "clsx";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useGlobalData, { usePluginData } from "@docusaurus/useGlobalData";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
@@ -17,25 +15,19 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/repos">
-            DHIS2 Projects List
-          </Link>
-        </div>
       </div>
     </header>
   );
 }
 
 export default function Home(): JSX.Element {
-  const context = useDocusaurusContext();
-  const { siteConfig } = context;
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
+    <Layout title={`${siteConfig.title}`} description="DHIS2 Web Academy">
       <HomepageHeader />
-      {/* <main>
+      <main>
         <HomepageFeatures />
-      </main> */}
+      </main>
     </Layout>
   );
 }

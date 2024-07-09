@@ -1,9 +1,9 @@
 import { RepoType } from "@site/src/types/repos";
-import { useState } from "react";
 
 type GeneralInfoProps = {
   repos: RepoType[];
 };
+
 const GeneralInfo = ({ repos }: GeneralInfoProps) => {
   const byLanguage = repos.reduce((prev, curr) => {
     const { language } = curr;
@@ -26,17 +26,9 @@ const GeneralInfo = ({ repos }: GeneralInfoProps) => {
 
   const old = repos.filter((r) => r.pushed_at < "2021");
 
-  const [isClosed, close] = useState(false);
-
   return (
     <>
       <div className="alert alert--primary margin--md" role="alert">
-        {/* <button aria-label="Close" className="clean-btn close" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button> */}
-        {/* <button aria-label="Close" className="clean-btn close" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button> */}
         <div>
           <div>
             {repos.length} projects in total.
@@ -65,26 +57,6 @@ const GeneralInfo = ({ repos }: GeneralInfoProps) => {
           </div>
         </div>
       </div>
-      {!isClosed && (
-        <div className="alert alert--warning margin--md" role="alert">
-          <button
-            aria-label="Close"
-            onClick={() => close(true)}
-            className="clean-btn close"
-            type="button"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-          You can override the repo's owner by adding a tag starting with
-          "team-" to the GitHub repo (i.e. team-platform). These tags are
-          dynamic and you can define any values (i.e. team-implementation).{" "}
-          <br />
-          This is still work in progress. Some of the other info we'll surface
-          here: Test coverage, the last commits on release branches (to help
-          with tracking backports) etc..
-          <br />
-        </div>
-      )}
     </>
   );
 };

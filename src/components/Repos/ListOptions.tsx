@@ -85,6 +85,7 @@ const ListOptions = (props: ListOptionsProps) => {
           )
           .map((t) => (
             <li
+              id={t}
               className={clx({
                 "tabs__item ": true,
                 "tabs__item--active": teams[t] === options["current-team"],
