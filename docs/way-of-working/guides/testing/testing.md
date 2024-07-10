@@ -3,7 +3,10 @@ title: Way of Testing
 sidebar_position: 10
 ---
 
-:::tip
+:::danger[Draft]
+
+This document is still in draft. You can discuss it as part of this PR: https://github.com/dhis2/wow-frontend/pull/7.
+
 The scope of this document is automated tests _in code_; unit, integration, end to end, contract etc... in the context of the _frontend_ for platform team. It does not tackle other important aspects such as manual testing and its processes, or backend and database tests.
 :::
 
@@ -86,7 +89,7 @@ When we don't write tests,
 This section is to document and point to common patterns and 
 
 :::danger[ToDo]
-add links and context for these patterns
+add links and context for these patterns, and more concrete examples
 :::
 
 - End to end tests without mocked backend: Scheduler as an example
@@ -94,14 +97,29 @@ add links and context for these patterns
 - Testing UI components with Zustand 
 - Avoiding flakiness in time and date-related
 
-### Other aspects of automated tests
+### react-testing-library patterns
+https://testing-library.com/docs/react-testing-library/intro/
+
+### cypress patterns
+https://docs.cypress.io/guides/references/best-practices
+
+## Other aspects of automated tests
 - Reducing flakiness
 - Tests code quality
 - Using Cucumber or other DSLs
 - Running in CI vs local
 - ....
 
-### Proposed actions
+
+## Readings
+
+- [Five Factor Testing](https://madeintandem.com/blog/five-factor-testing/)
+- [Write tests. Not too many. Mostly integration](https://kentcdodds.com/blog/write-tests)
+- [Practical test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
+
+## Proposed actions
+
+:::danger[Proposed actions]
 
 - ? Track code coverage to have a more precise idea of where we are
 
@@ -111,4 +129,4 @@ add links and context for these patterns
 
 - ...
 
-
+:::
