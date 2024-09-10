@@ -75,16 +75,11 @@ const config: Config = {
           to: "repos",
           label: "Repos Catalog",
         },
-        {
-          type: "docSidebar",
-          sidebarId: "wayOfWorkingSideBar",
-          label: "Way of Working",
-        },
-        {
-          type: "docSidebar",
-          sidebarId: "onboardingSideBar",
-          label: "Onboarding",
-        },
+        // {
+        //   type: "docSidebar",
+        //   sidebarId: "wayOfWorkingSideBar",
+        //   label: "Way of Working",
+        // },
         {
           type: "dropdown",
           label: "Other",

@@ -6,7 +6,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 type FeatureItem = {
   title: string;
-  to: string;
+  to?: string;
   Svg: React.ComponentType<React.ComponentProps<"svg">>;
   description: JSX.Element;
 };
@@ -14,12 +14,13 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "Frontend Way of Working",
-    to: "docs/way-of-working/platform-fe-wow",
+    // to: "docs/way-of-working/platform-fe-wow",
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
-        This document describes our process and general way of working in the
-        frontend team.
+        Upcoming
+        {/* This document describes our process and general way of working in the
+        frontend team. */}
       </>
     ),
   },
@@ -36,12 +37,13 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Dev Guides",
-    to: "docs/way-of-working/guides/testing/",
+    // to: "docs/way-of-working/guides/testing/",
     Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
     description: (
       <>
-        Guides and pattern libraries for Frontend developers to document the
-        technical aspects of how we do things (testing, typescript etc..)
+        Upcoming
+        {/* Guides and pattern libraries for Frontend developers to document the
+        technical aspects of how we do things (testing, typescript etc..) */}
       </>
     ),
   },
@@ -51,7 +53,7 @@ function Feature({ title, Svg, description, to }: FeatureItem) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Link to={to}>
+        <Link to={to ?? "/"}>
           <Svg className={styles.featureSvg} role="img" />
         </Link>
       </div>
