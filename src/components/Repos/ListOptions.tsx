@@ -17,6 +17,7 @@ type ListOptionsProps = {
 
 const displayValues: Record<RepoOwnerType, string> = {
   all: "All",
+  extensibility: "Extensibility",
   analytics: "Analytics",
   android: "Mobile",
   backend: "Backend",
@@ -34,6 +35,7 @@ const order: RepoOwnerType[] = [
   "platform",
   "analytics",
   "tracker",
+  "extensibility",
   "android",
   "backend",
   "ux",
