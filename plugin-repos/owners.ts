@@ -24,6 +24,21 @@ const owners = {
     "maps-climate-pilot-app",
     "climate-data-app",
   ],
+  extensibility: [
+    "app-platform",
+    "app-runtime",
+    "ui",
+    "cli-style",
+    "cli",
+    "cli-helpers-engine",
+    "datastore-app",
+    "route-manager-app",
+    "fhir-ig-generator-app",
+    "reference-org-unit-sync",
+    "reference-civil-registry-lookup",
+    "app-management-app",
+    "app-hub"
+  ],
   tracker: [
     "capture-app",
     "tracker-capture-app",
