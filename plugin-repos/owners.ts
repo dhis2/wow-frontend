@@ -23,21 +23,21 @@ const owners = {
     "who-immunization-analysis-app",
     "maps-climate-pilot-app",
     "climate-data-app",
+    "event-visualizer-app"
   ],
   extensibility: [
     "app-platform",
     "app-runtime",
     "ui",
-    "cli-style",
-    "cli",
-    "cli-helpers-engine",
     "datastore-app",
     "route-manager-app",
     "fhir-ig-generator-app",
     "reference-org-unit-sync",
     "reference-civil-registry-lookup",
     "app-management-app",
-    "app-hub"
+    "app-hub",
+    "d2-i18n",
+    "action-semantic-release"
   ],
   tracker: [
     "capture-app",
@@ -95,7 +95,7 @@ const owners = {
     "translation-linker",
     "d2-cluster-docker-compose",
   ],
-  deprecated: ["academy-web-app-dev-2020"],
+  deprecated: ["academy-web-app-dev-2020", "app-service-datastore"],
   others: [
     "bedrock",
     "bot",
@@ -155,6 +155,9 @@ export const findOwner = (
   }
   if (repoName.match(/(android|kotlin)/i)) return "android";
   if (language?.match(/^(java|R|python)$/i)) return "backend";
-
+  if (repoName.match(/^tool-/i)) return "others";
+  if (repoName.match(/docker/i)) return "others";
+  if (repoName.match(/^cli-/i)) return "extensibility";
+  
   return "platform";
 };
