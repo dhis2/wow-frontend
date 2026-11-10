@@ -23,7 +23,7 @@ const owners = {
     "who-immunization-analysis-app",
     "maps-climate-pilot-app",
     "climate-data-app",
-    "event-visualizer-app"
+    "individual-data-visualizer-app"
   ],
   extensibility: [
     "app-platform",
